@@ -1,0 +1,22 @@
+# Running PostgreSQL using Docker Compose: docker-compose -f postgresql.yml up
+
+# Accessing the postgresql server using the pg-db container:
+    Attach Shell, then run the following command: psql -h pg-db -p 5432 -U postgres
+
+# Accessing the pgadmin through the following url: localhost:5050
+
+# Conncet to the server (pg-db).
+
+# Install psycopg2
+
+# sudo apt-get update -y
+
+# sudo apt-get install -y python3-psycopg2
+
+# Create the sqlQueries.py file to store the sql queries which will be used in the createSchema.py to
+to create the tables in postgres according the schema in schema.PNG
+
+# Create the createSchema.py file to write the script of creating the tables
+in postgres according to the schema in schema.PNG
+
+# Finally, create the etl.py file to read the data from the JSON files and put it in the sparkifydb
